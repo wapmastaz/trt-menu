@@ -2,7 +2,7 @@
 
 namespace App\Policies;
 
-use App\Models\Categories;
+use App\Models\Category;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
@@ -15,27 +15,28 @@ class CategoriesPolicy
 
     }
 
-    public function view(User $user, Categories $categories): bool
+    public function view(User $user, Category $categories): bool
     {
     }
 
     public function create(User $user): bool
     {
+
     }
 
-    public function update(User $user, Categories $categories): bool
+    public function update(User $user, Category $categories): bool
     {
     }
 
-    public function delete(User $user, Categories $categories): bool
+    public function delete(User $user, Category $categories): bool
     {
     }
 
-    public function restore(User $user, Categories $categories): bool
+    public function restore(User $user, Category $categories): bool
     {
     }
 
-    public function forceDelete(User $user, Categories $categories): bool
+    public function forceDelete(User $user, Category $categories): bool
     {
     }
 }
